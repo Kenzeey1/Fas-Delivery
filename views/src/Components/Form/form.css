@@ -1,0 +1,237 @@
+html,body {
+    height: 100%;
+    padding-top: 0;
+}
+
+label{
+    font-size: 100%;
+}
+
+ul{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    margin: 0;
+    padding: 0;
+}
+
+#name,#firstname{
+    margin-left: 15px;
+}
+
+.invalid-feedback{
+    display: none;
+    color : red;
+}
+
+@media screen and (min-width: 1139px) {
+    body {
+        background-image: url('../../images/acceuil1.jpeg');
+        background-size: cover;
+        display: flex;
+        padding-bottom: 40px;
+        background-color: #f5f5f5;
+    }
+
+    h1{
+        color: rgb(246, 203, 33);
+    }
+
+    .form-signin {
+        width: 100%;
+        max-width: 25%;
+        padding: 5px;
+        margin: auto;
+        margin-left: 70%;
+        margin-top: 5%;
+    }
+    .form-signin .form-floating:focus-within {
+        z-index: 2;
+    }
+
+    .form-signin input[type="FN"] {
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+
+    .form-signin input[type="name"] {
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+
+    .form-signin input[type="email"] {
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+
+    .form-signin input[type="tel"] {
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+
+    .form-signin input[type="password"] {
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+
+    .invalid-feedback{
+        font-size: 18px;
+    }
+
+    #logo2{
+        display: none;
+    }
+
+    .mobile{
+        display: none;
+    }
+}
+/*<! ------------------ !>*/
+@media screen and (min-width: 576px) and (max-width : 1139px) {
+    body {
+        padding-bottom: 40px;
+        background-color: rgb(246, 203, 33);
+    }
+    .form-signin {
+        width: 100%;
+        max-width: 70%;
+        margin: auto;
+    }
+    .form-signin .form-floating:focus-within {
+        z-index: 2;
+    }
+
+    .form-signin input[type="FN"] {
+        font-size: 18px;
+        margin-bottom: 8px;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
+    .form-signin input[type="name"] {
+        font-size: 18px;
+        margin-bottom: 8px;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
+    .form-signin input[type="email"] {
+        font-size: 18px;
+        margin-bottom: 8px;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
+    .form-signin input[type="tel"] {
+        font-size: 18px;
+        margin-bottom: 8px;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
+    .form-signin input[type="password"] {
+        font-size: 18px;
+        margin-bottom: 8px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+
+    .invalid-feedback{
+        font-size: 15px;
+    }
+
+    #logo2{
+        margin : 10%;
+    }
+
+    img{
+        padding-top: 10px;
+    }
+
+    .mobile{
+        display: none;
+    }
+
+}
+/*<! ------------------ !>*/
+@media screen and (max-width: 576px) {
+
+    *{
+        font-size: 20px;
+    }
+    body {
+        padding-bottom: 40px;
+        background-color: rgb(246, 203, 33);
+    }
+    .form-signin {
+        width: 100%;
+        max-width: 70%;
+        margin: auto;
+    }
+
+    .form-signin .form-floating:focus-within {
+        z-index: 2;
+    }
+
+    .form-signin input[type="FN"] {
+        font-size: 13px;
+        margin: 5px;
+        height: 4px;
+    }
+
+    .form-signin input[type="name"] {
+        font-size: 13px;
+        margin: 5px;
+        height: 4px;
+    }
+
+    .form-signin input[type="email"] {
+        font-size: 13px;
+        margin: 5px;
+        height: 4px;
+    }
+
+    .form-signin input[type="tel"] {
+        font-size: 13px;
+        margin: 5px;
+        height: 4px;
+    }
+
+    .form-signin input[type="password"] {
+        font-size: 13px;
+        margin: 5px;
+        height: 4px
+    }
+
+    .invalid-feedback{
+        font-size: 10px;
+        margin-bottom: 3px;
+    }
+
+    label{
+        font-size: 14px;
+    }
+
+    img{
+        padding-top: 5px;
+    }
+
+    #logo2{
+        display: none;
+    }
+
+    .noMobile{
+        display: none;
+    }
+
+}
+
+
+
+
+
+

@@ -1,0 +1,322 @@
+html,body {
+    height: 100%;
+    width: 100%;
+    padding-top: 0;
+}
+body {
+    background-color: rgb(246, 203, 33);
+}
+div.container-fluid{
+    height: 100%;
+    padding: 0;
+}
+.side-bar{
+    padding: 0;
+}
+#plusButton,#platNavbar{
+    color: rgb(246, 203, 33);
+}
+nav{
+    margin-bottom:1%;
+}
+.btn-sb{
+    margin-left : 15%;
+    padding : 0;
+}
+
+.input-box{
+    margin-left:5%;
+}
+
+.total-price{
+    text-align : center;
+}
+
+#account{
+    color: rgb(235, 195, 86);
+    font-size: 150%;
+    text-align: center;
+    margin: 1%;
+}
+#ready-dishes-label,#starter-label,#main-course-label,#dessert-label,#boisson-label,#compose-label{
+    color: rgb(246, 203, 33);
+    margin-left: 2%;
+}
+.popup_content {
+    max-width: 75%;
+    margin: 10px;
+    padding: 0 10px;
+    border: 2px solid #444;
+    background: rgb(221, 219, 202);
+}
+/* debut de ce qui concerne les plats prêts */
+.box-container{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    flex-wrap:wrap;
+    margin:1rem auto;
+    width: 90%;
+}
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.info,.infob{
+    position: absolute;
+    top: 0;left:0;
+    height: 100%;
+    width: 100%;
+    background: rgb(51,51,51,.6);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-flow: column;
+    color:#fff;
+}
+h3{
+    font-size:2rem;
+}
+button.view{
+    border-radius: 10px;
+    font-size: 1.5rem;
+    height: 3rem;
+    width: 14rem;
+}
+button.view:hover{
+    background-color:rgb(235, 195, 86);
+}
+
+.count{
+    border : 10px solid black;
+    text-align:center;
+    height:7.5%;
+    width:7.5%;
+    background-color: #91cb91;
+    position: absolute;
+    font-weight:bold;
+}
+
+#orderform>div{
+
+}
+
+.shopbag>div{
+
+}
+
+@media screen and (min-width: 1139px){
+    .box{
+        height: 17.5rem;
+        width:22.5rem;
+        border-radius: .5rem;
+        margin:2rem;
+        cursor: pointer;
+        position: relative;
+        box-shadow: 0 0 .5rem #333;
+    }
+    div.container-fluid,div.row,#side-bar{
+        padding: 0;
+        height:100%;
+    }
+    body{
+        /*background-image: url('../../images/shop-image.jpg');*/
+        background-size: cover;
+    }
+    #popup_compose{
+        max-width: 30%;
+    }
+    #titre-page-menu{
+        border: 2px solid #444;
+        background-color: rgb(221, 219, 202);
+        border-radius: 10%;
+        padding: 5px;
+        margin-left : 30%;
+        margin-right:30%;
+    }
+    .card:hover .image img {
+        transform: scale(1.5)
+    }
+    .card {
+        width: 350px;
+        background-color: #efefef;
+        border: none;
+        cursor: pointer;
+        transition: all 0.5s
+    }
+    .number,.name {
+        font-size: 22px;
+        font-weight: bold
+    }
+    .idd {
+        font-size: 14px;
+        font-weight: 600
+    }
+    .join {
+        font-size: 14px;
+        color: #a0a0a0;
+        font-weight: bold
+    }
+    .p1{
+        font-size: 100%;
+        font-weight: bold;
+        border-top: .2rem solid yellow;
+        border-bottom: .2rem solid yellow;
+        margin:1rem 2rem;
+    }
+    .p2,.p2form{
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        margin:1%;
+    }
+    .p3{
+        border-right: 1px solid black;
+    }
+}
+/*<! ------------------ !>*/
+@media screen and (min-width: 576px) and (max-width : 1139px) {
+    .box{
+        height: 17.5rem;
+        width:22.5rem;
+        border-radius: .5rem;
+        margin:2rem;
+        cursor: pointer;
+        position: relative;
+        box-shadow: 0 0 .5rem #333;
+    }
+    div.container-fluid,div.row,#side-bar{
+        padding: 0;
+        margin-bottom: 0;
+        height:100%;
+    }
+    #titre-page-menu{
+        border: 2px solid #444;
+        background-color: rgb(221, 219, 202);
+        border-radius: 10%;
+        padding: 5px;
+        margin-left : 20%;
+        margin-right: 20%;
+    }
+    #popup_compose{
+        max-width: 40%;
+    }
+    .p1{
+        font-size: 100%;
+        font-weight: bold;
+        border-top: .2rem solid yellow;
+        border-bottom: .2rem solid yellow;
+        margin:1rem 2rem;
+    }
+    .p2,.p2form{
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        margin:1%;
+    }
+    .p3{
+        border-right: 1px solid black;
+    }
+    .card:hover .image img {
+        transform: scale(1.5)
+    }
+    .card {
+        width: 270px;
+        background-color: #efefef;
+        border: none;
+        cursor: pointer;
+        transition: all 0.5s
+    }
+    .number,.name{
+        font-size: 18px;
+        font-weight: bold
+    }
+    .idd{
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .join {
+        font-size: 10px;
+        color: #a0a0a0;
+        font-weight: bold
+    }
+}
+/*<! ------------------ !>*/
+@media screen and (max-width: 576px) {
+    body{
+        margin-top:15px;
+    }
+    div.container-fluid,div.row{
+        padding: 0;
+        margin-bottom: 0;
+        height:100%;
+    }
+    #side-bar{
+        margin-top:70%;
+    }
+    .popup_content {
+        max-width: 100%;
+    }
+    button.view,.btn-v{
+        border-radius: 10px;
+        font-size: 1rem;
+        height: 2rem;
+        width: 6rem;
+    }
+    .box{
+        height: 17.5rem;
+        width: 22.5rem;
+        border-radius: .5rem;
+        margin:2rem;
+        cursor: pointer;
+        position: relative;
+        box-shadow: 0 0 .5rem #333;
+    }
+    h3{
+        font-size:100%;
+    }
+    .p1{
+        font-size: 80%;
+        font-weight: bold;
+        border-top: 1px solid yellow;
+        border-bottom: 1px solid yellow;
+    }
+    .p2{
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        font-size: 8px;
+    }
+    .p2form{
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        font-size: 12px;
+    }
+    .p3{
+        border-right: 1px solid black;
+    }
+    .card:hover .image img {
+        transform: scale(1.5)
+    }
+    .card {
+        width: 150px;
+        background-color: #efefef;
+        border: none;
+        cursor: pointer;
+        transition: all 0.5s
+    }
+    .number,.name{
+        font-size: 16px;
+        font-weight: bold
+    }
+    .idd{
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .join {
+        font-size: 8px;
+        color: #a0a0a0;
+        font-weight: bold
+    }
+
+
+}

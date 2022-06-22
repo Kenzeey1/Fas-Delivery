@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.3",
+    "jquery-popup-overlay": "^2.1.5",
+    "pg": "^8.7.3"
+  }
+}

@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Mon titre</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="./src/Components/Navbars/purchaseNavbars.css" rel="stylesheet">
+  </head>
+  <body class="text-center bg-image" id="root">
+
+    <!-- ... -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-2 flex-shrink-0 order-2 order-sm-1 ">
+                <div class="text-white bg-dark " id='side-bar'>
+                    <label class="text-decoration-none" id="account">
+                      <%=client.name%>  <%=client.fname%>
+                    </label>
+                    <hr>
+                    <ul class="nav nav-pills flex-column mb-auto">
+                      <li>
+                        <Button class="nav-link text-white popup_account_open btn-sb">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/><path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/></svg>
+                            Profil
+                        </Button>
+                      </li>
+                      <li>
+                        <Button class="nav-link text-white btn-sb popup_shop-bag_open">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-basket" viewBox="0 0 16 16"><path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 13.5V9a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1.217L5.07 1.243a.5.5 0 0 1 .686-.172zM2 9v4.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V9H2zM1 7v1h14V7H1zm3 3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 4 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 6 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 8 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5z"/></svg>
+                            Panier
+                        </Button>
+                      </li>
+                      <li>
+                      <a href='/'><button href='/' class="nav-link text-white btn-sb">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-left" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6 12.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v2a.5.5 0 0 1-1 0v-2A1.5 1.5 0 0 1 6.5 2h8A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 5 12.5v-2a.5.5 0 0 1 1 0v2z"/><path fill-rule="evenodd" d="M.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L1.707 7.5H10.5a.5.5 0 0 1 0 1H1.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3z"/></svg>
+                        Partir
+                      </button></a>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-10 order-1 order-sm-2 central-page">
+                <main>
+                  <h1 id='titre-page-menu'> Have a good time.. Take a Pizza </h1>
+                  <nav class="navbar navbar-dark bg-dark" aria-label="First navbar example">
+                    <div class="container-fluid">
+                      <label class="navbar-brand platNavbar" id="ready-dishes-label"> Nos menus </label>
+                      <button class="navbar-toggler popup_ready-dishes_open" type="button" data-bs-toggle="collapse" data-bs-target="#Starter" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-plus-circle" id='plusButton' viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg>
+                      </button>
+                      <div class="collapse navbar-collapse" >
+                        <ul class="navbar-nav me-auto mb-2" id='entree'>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+                  <nav class="navbar navbar-dark bg-dark" aria-label="First navbar example">
+                    <div class="container-fluid">
+                      <label class="navbar-brand platNavbar" id="starter-label"> Entrées </label>
+                      <Button class="navbar-toggler popup_starter_open" type="button" >
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-plus-circle" id='plusButton' viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg>
+                      </Button>
+                    </div>
+                  </nav>
+                  <nav class="navbar navbar-dark bg-dark" aria-label="First navbar example">
+                  <div class="container-fluid">
+                    <label class="navbar-brand platNavbar" id="compose-label"> Composez votre pizza </label>
+                    <Button class="navbar-toggler popup_compose_open" type="button" >
+                      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-plus-circle" id='plusButton' viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg>
+                    </Button>
+                  </div>
+                </nav>
+                  <nav class="navbar navbar-dark bg-dark" aria-label="First navbar example">
+                    <div class="container-fluid">
+                      <label class="navbar-brand platNavbar" id="main-course-label"> Pizzas déjà composées </label>
+                      <Button href='#popup_main-course' class="navbar-toggler popup_main-course_open" type="button" data-bs-toggle="collapse" data-bs-target="#mainCourse" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-plus-circle" id='plusButton' viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg>
+                      </Button>
+                    </div>
+                  </nav>
+                  <nav class="navbar navbar-dark bg-dark" aria-label="First navbar example">
+                    <div class="container-fluid">
+                      <label class="navbar-brand platNavbar" id="dessert-label"> Les desserts </label>
+                      <Button class="navbar-toggler popup_dessert_open" type="button" >
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-plus-circle" id='plusButton' viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg>
+                      </Button>
+                    </div>
+                  </nav>
+                  <nav class="navbar navbar-dark bg-dark" aria-label="First navbar example">
+                      <div class="container-fluid dropdown">
+                        <label class="navbar-brand platNavbar " id="boisson-label"> Les boissons </label>
+                        <button class="navbar-toggler popup_boisson_open" type="button" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-plus-circle" id='plusButton' viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/></svg>
+                        </button>
+                      </div>
+                  </nav>
+                </main>
+            </div>
+        </div>
+    </div>
+
+    <!-- ... -->
+    <section id="popup_account">
+      <div class="container mt-4 mb-4 p-3 d-flex justify-content-center">
+          <div class="card p-4">
+              <div class=" image d-flex flex-column justify-content-center align-items:center">
+             <!--<button class="btn btn-secondary"> <img src="./src/images.jpg" height="100" width="100" /></button>-->
+              <button class="btn btn-secondary"> <img src="https://i.imgur.com/wvxPV9S.png" height="100" width="100" /></button>
+              <span class="name mt-3"> <%=client.name%>  <%=client.fname%> </span>
+              <span class="idd"> <%=client.email%> </span>
+              <span class="number"> <%=client.pn%> </span>
+                  <div class=" px-2 rounded mt-4 date">
+                    <span class="join">Joined ...</span>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </section>
+
+    <!-- ... -->
+
+    <section id="popup_shop-bag">
+        <h2 class="section-header" style='text-align:center'> Panier </h2>
+        <div class="shopbag">
+            <div class="order-total" style="text-align:center;">
+                <p class ="p1">
+                    <strong class="order-total-title"> Prix total </strong>
+                    <span class="order-total-price" id="totalprice" >0</span>
+                    €
+                </p>
+            </div>
+            <div class="shop">
+                <div class="order-items" id="myshopbag">
+
+                </div>
+            </div>
+            <div style="text-align:center;">
+                <button class=" btn-valider btn btn-warning" style="margin:5%;" id ="formButton" type="button"> Commande </button>
+            </div>
+            <div class="orderform p2form" id="orderform">
+                <div>
+                    <b> Nom : </b><br/><input type="text" name="nom" id="nom">
+                </div>
+
+                <div>
+                    <b> Prenom : </b><br/><input type="text" name="prenom" id="prenom">
+                </div>
+                <div>
+                    <b> Adresse : </b><br/><input type="text" name="adresse" id="adresse">
+                </div>
+                <div style="text-align:center;"><button class="btn btn-success" style="margin:5%;" id="submit"> Envoyer </button></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ... -->
+
+    <section id="popup_ready-dishes" class="container">
+        <h2 class='total-price'> Prix total : <span></span></h2>
+        <div class="box-container">
+            <%for (let i = 0; i < menu.length; i++) { %>
+            <div class="box">
+                <%
+                let menuPrice;
+                let menuPizzai;
+                let nbEntreei;
+                let tailleBoisson;
+                menuPrice = "menuPrice"+i;
+                taillePizzai = "taille-pizza-"+i;
+                nbEntreei = "nb-entree-"+i;
+                tailleBoissoni = "taille-boisson-"+i;
+                %>
+                <div class="infob">
+                    <h3><%= menu[i].titre %> : <span id=<%= menuPrice %>><%= menu[i].prix %> %></span> €</h3>
+                    <p class ="p1"><%=menu[i].ladescription %></p>
+                    <% let formi = "menu-form"+i%>
+                    <button class="btn btn-secondary dropdown-toggle view" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      Select
+                    </button>
+                    <div class="dropdown-menu">
+                        <div class="row">
+
+                            <form class="col-4 p3" id=<%= formi %> style='align-items: center; text-align: center;justify-content:center;' aria-labelledby="dropdownMenuButton1">
+                               <p class ="p1 menu-pizza-taille" id=<%= taillePizzai %>>Pizza : <%= menu[i].taillepizza %></p>
+                               <% let id2 = "menu-"+i+"pizza"; %>
+                               <%for (let j = 0; j < pizza.length; j++) { %>
+                                   <div class ="p2">
+                                     <label><%= pizza[j].nom %></label>
+                                     <br/>
+                                     <input class="menu-pizzas" type="radio" name=<%= id2 %> id=<%= pizza[j].nom %> >
+                                   </div>
+                               <% } %>
+                            </form>
+                            <form class="col-4 p3" id=<%= formi %> style='align-items: center; text-align: center;justify-content:center;' aria-labelledby="dropdownMenuButton1">
+                               <p class ="p1" id=<%= nbEntreei %>>Entree : <%= menu[i].nbentrees %></p>
+                               <%for (let j = 0; j < entree.length; j++) {
+                               let class_checkbox = "entree-checkbox"+i;
+                               %>
+                                   <div class="p2">
+                                     <label><%= entree[j].nom %></label>
+                                     <br/>
+                                     <input class=<%= class_checkbox %> type="checkbox" name=<%= entree[j].nom %>>
+                                   </div>
+                               <% } %>
+                            </form>
+                            <form class="col-4 " id=<%= formi %> style='align-items: center; text-align: center;justify-content:center;' aria-labelledby="dropdownMenuButton1">
+                               <p class ="p1" id=<%= tailleBoissoni %>>Soda : <%= menu[i].tailleboisson %></p>
+                               <% let id3 = "menu-"+i+"boissons"; %>
+                               <%for (let j = 0; j < boissons.length; j++) { %>
+                                   <div class="p2">
+                                     <label><%= boissons[j].nom %></label>
+                                     <br/>
+                                     <input class="menu-boissons" type="radio" name=<%= id3 %> id=<%= boissons[j].nom %>>
+                                   </div>
+                               <% } %>
+                            </form>
+                            <% let idbtn = "valideM"+i %>
+                            <div style="text-align:center">
+                              <button class='btn btn-outline-success valide btn-v' id=<%= idbtn %> type="button" name=<%= menu[i].titre %>>Validate</button>
+                            </div>
+
+                       </div>
+                    </div>
+                </div>
+            </div>
+            <% } %>
+        </div>
+    </section>
+
+    <!-- ... -->
+
+    <section id="popup_starter">
+      <h2 class='total-price'> Prix total : <span></span></h2>
+      <div class="box-container">
+        <%for (let i = 0; i < entree.length; i++) { %>
+        <div class="box">
+            <%
+            let srcV;
+            let starterPrice;
+            srcV = "./src/images/starter"+i+".jpg";
+            starterPrice = "starterPrice"+i;
+            %>
+            <img src=<%= srcV %> alt ="">
+            <div class="info">
+                <h3><%= entree[i].nom %> : <span id=<%= starterPrice %>><%= entree[i].prix %></span> €</h3>
+                <% let formi = "starter-form"+i%>
+                <button class="btn btn-secondary dropdown-toggle view" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  Select
+                </button>
+                <form id=<%= formi %> class="dropdown-menu" style='align-items: center; text-align: center;justify-content:center;' aria-labelledby="dropdownMenuButton1">
+                   <% let attrname = "starter-flexRadioDefault"+i %>
+                   <%for (let j = 0; j < entree[i].sauces.length; j++) { %>
+                       <div>
+                         <input class="form-check-input" type="radio" name=<%= attrname %> value=<%= entree[i].sauces[j] %> id="starter-flexRadioDefault1">
+                         <label><%= entree[i].sauces[j] %></label>
+                       </div>
+                   <% } %>
+                       <div>
+                          <button class='btn btn-outline-success valide btn-v' name=<%= entree[i].nom %> type="button" >Validate</button>
+                       </div>
+                </form>
+            </div>
+        </div>
+        <% } %>
+      </div>
+    </section>
+
+    <!-- ... -->
+
+    <section id="popup_main-course">
+      <h2 class='total-price'> Prix total : <span></span></h2>
+      <div class="box-container">
+        <%for (let i = 0; i < pizza.length; i++) { %>
+        <div class="box">
+            <%
+            let srcV;
+            let pizzaPrice;
+            srcV = "./src/images/pizza"+i+".jpg";
+            pizzaPrice = "pizzaPrice"+i;
+            %>
+            <img src=<%= srcV %> alt="">
+            <div class="info">
+                <h3><%= pizza[i].nom %> : <span id=<%= pizzaPrice %>><%= pizza[i].prix %></span> €</h3>
+                <p class ="p1"><%=pizza[i].description %></p>
+                
+                <div class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle view " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    Select
+                  </button>
+                  <% let formi = "pizza-form"+i%>
+                  <form id=<%= formi %> class="dropdown-menu" style='align-items: center; text-align: center;justify-content:center;' aria-labelledby="dropdownMenuButton1">
+                       <% let attrname = "pizza-flexRadioDefault"+i %>
+                       <div>
+                         <input class="form-check-input" type="radio" name=<%= attrname %> value='M' id="pizza-flexRadioDefault1">
+                         <label>Size : M</label>
+                       </div>
+                       <div>
+                         <input class="form-check-input" type="radio" name=<%= attrname %> value='L' id="pizza-flexRadioDefault2">
+                         <label>Size : L +3€</label>
+                       </div>
+                       <div>
+                         <input class="form-check-input" type="radio" name=<%= attrname %> value='XL' id="pizza-flexRadioDefault3">
+                         <label>Size : XL +5€</label>
+                       </div>
+                       <div>
+                           <button class='btn btn-outline-success valide btn-v' name=<%= pizza[i].nom %> type="button" >Validate</button>
+                       </div>
+                  </form>
+                </div>
+            </div>
+        </div>
+        <% } %>
+      </div>
+    </section>
+
+    <!-- ... -->
+
+    <section id="popup_dessert">
+      <h2 class='total-price'> Prix total : <span></span></h2>
+      <div class="box-container">
+        <%for (let i = 0; i < dessert.length; i++) { %>
+        <div class="box">
+            <%
+            let srcV;
+            srcV = "./src/images/dessert"+i+".jpeg";
+            %>
+            <img src=<%= srcV %> alt="">
+            <div class="info">
+                <h3><%= dessert[i].nom %> : <%= dessert[i].prix %> €</h3>
+                <p class ="p1"><%=dessert[i].description %></p>
+                <button class="btn btn-secondary view dessert-selector" style='align-items: center; text-align: center;justify-content:center;' type="button" name=<%= dessert[i].nom %> type="button" value=<%= dessert[i].prix %> >
+                   Select
+                </button>
+            </div>
+        </div>
+        <% } %>
+      </div>
+    </section>
+
+    <!-- ... -->
+
+    <section id="popup_boisson">
+      <h2 class='total-price'> Prix total : <span id='boisson-span'></span></h2>
+      <div class="box-container">
+          <%for (let i = 0; i < boissons.length; i++) { %>
+          <div class="box">
+              <%
+              let srcV;
+              let boissonPrice;
+              srcV = "./src/images/boisson"+i+".jpg"
+              boissonPrice = "boissonPrice"+i
+              %>
+              <img src=<%= srcV %> alt="">
+              <div class="info">
+                  <h3><%= boissons[i].nom %> : <span id=<%= boissonPrice %>><%= boissons[i].prix %></span> €</h3>
+                  <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle view" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      Select
+                    </button>
+                    <% let formi = "boissons-form"+i%>
+                    <form id=<%= formi %> class="dropdown-menu" style='align-items: center; text-align: center;justify-content:center;' aria-labelledby="dropdownMenuButton1">
+                      <% let attrname = "boissons-flexRadioDefault"+i %>
+                     <div>
+                       <input class="form-check-input" type="radio" name=<%= attrname %> value='33cl' id="boissons-flexRadioDefault1">
+                       <label>33cl</label>
+                     </div>
+                     <div>
+                       <input class="form-check-input" type="radio" name=<%= attrname %> value='1.5L' id="boissons-flexRadioDefault2">
+                       <label>1.5L + 1€</label>
+                     </div>
+                     <div>
+                       <input class="form-check-input" type="radio" name=<%= attrname %> value='2L' id="boissons-flexRadioDefault3">
+                       <label>2L +2€</label>
+                     </div>
+                     <div>
+                         <button class='btn btn-outline-success valide btn-v' name=<%= boissons[i].nom %> type="button">Validate</button>
+                     </div>
+                    </form>
+                  </div>
+              </div>
+          </div>
+          <% } %>
+        </div>
+    </section>
+
+    <!-- ... -->
+
+    <section id="popup_compose">
+      <h2 class='total-price'> Prix total : <span></span></h2>
+      <div>
+        <div class='image de pizza'></div>
+        <div>
+            <h3 style='text-align: center'>Composez .. à partir de : 9 € !! </h3>
+            <div>
+                <p class ="p1">Choisissez la base de votre pizza (Obligatoire)</p>
+                <div class="compose-input-container">
+                    <%
+                    for(let i = 0;i < base.length;i++){
+                    let id = "base-flexRadioDefault"+i;
+                    let name = base[i].nom;
+                    let value = base[i].nom;
+                    %>
+                    <div class='input-box'>
+                    <input class="base-radio" type="radio" name='base' value = <%= value %>>
+                    <label><%= name %></label>
+                    </div>
+                    <% } %>
+                </div>
+            </div>
+            <div>
+                <p class ="p1">Choisissez la garniture de votre pizza (Obligatoire), les 3 premiers gratuit le reste en supplément</p>
+                <div class="compose-input-container">
+                    <%
+                    for(let i = 0;i < garniture.length;i++){
+                    let id = "garniture-flexRadioDefault"+i;
+                    let value = garniture[i].prix;
+                    let name = garniture[i].nom;
+                    let class_checkbox= "garniture-checkbox";
+                    let id_checkbox = "garniture-checkbox"+i;
+                    let class_span = "prix-garniture";
+                    let id_span = "prix-garniture"+i;
+                    %>
+                    <div class='input-box'>
+                    <input class=<%= class_checkbox %> type="checkbox" name=<%= name %> value=<%= value %> id =<%= id_checkbox %>>
+                    <label><%= name %></label>
+                    <label style='position:absolute;right:10%;'>+<span class=<%= class_span %> id=<%= id_span %>>0</span> €</label>
+                    </div>
+                    <% } %>
+                </div>
+            </div>
+            <div>
+                <p class ="p1">Choisissez un fromage (Obligatoire),le premier gratuit le reste en supplément</p>
+                <div class="compose-input-container">
+                    <%
+                    for(let i = 0;i < fromage.length;i++){
+                    let id = "fromage-flexRadioDefault"+i;
+                    let value = fromage[i].prix;
+                    let name = fromage[i].nom;
+                    let class_checkbox= "fromage-checkbox"
+                    let id_checkbox = "fromage-checkbox"+i;
+                    let class_span = 'prix-fromage'
+                    let id_span = 'prix-fromage'+i;
+                    %>
+                    <div class='input-box'>
+                    <input class=<%= class_checkbox %> type="checkbox" name=<%= name %> value=<%= value %> id =<%= id_checkbox %>>
+                    <label><%= name %></label>
+                    <label style='position:absolute;right:10%;'>+<span class=<%= class_span %> id=<%= id_span %>>0</span> €</label>
+                    </div>
+                    <% } %>
+                </div>
+            </div>
+            <div>
+                <p class ="p1">Choisissez votre sauce (Obligatoire),le premier gratuit le reste en supplément</p>
+                <div class="compose-input-container">
+                    <%
+                    for(let i = 0;i < saucePizza.length;i++){
+                    let id = "saucePizza-flexRadioDefault"+i;
+                    let value = saucePizza[i].prix;
+                    let name = saucePizza[i].nom;
+                    let class_checkbox= "saucePizza-checkbox"
+                    let id_checkbox = "saucePizza-checkbox"+i;
+                    let class_span = 'prix-saucePizza'
+                    let id_span = 'prix-saucePizza'+i;
+                    %>
+                    <div class='input-box'>
+                    <input class=<%= class_checkbox %> type="checkbox" name=<%= name %> value=<%= value %> id =<%= id_checkbox %>>
+                    <label><%= name %></label>
+                    <label style='position:absolute;right:10%;'>+<span class=<%= class_span %> id=<%= id_span %>>0</span> €</label>
+                    </div>
+                    <% } %>
+                </div>
+            </div>
+            <div>
+                <p class ="p1">Choisissez la taille</p>
+                <div class='input-box compose-input-container'>
+                   <div>
+                     <input class="size-input-composable" type="radio" name="size" value='M'>
+                     <label>Size : M</label>
+                   </div>
+                   <div>
+                     <input class="size-input-composable" type="radio" name="size" value='L'>
+                     <label>Size : L +3€</label>
+                   </div>
+                   <div>
+                     <input class="size-input-composable" type="radio" name="size" value='XL'>
+                     <label>Size : XL +5€</label>
+                   </div>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div style='text-align: center;'>
+        <p class ="p1">Valider</p>
+        <button id="composable_valide" class='composable_valide view'>Ajouter</button>
+      </div>
+
+    </section>
+    <!-- ... -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="	crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/vast-engineering/jquery-popup-overlay@2/jquery.popupoverlay.min.js"></script>
+    <script type="module" src="./commandePage.js"></script>
+    
+  </body>
+</html>
